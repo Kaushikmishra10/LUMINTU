@@ -431,6 +431,7 @@ main>div{
         .left-panel{
             display: flex;
             justify-content: center;
+            align-items: center;
         }
         .right-panel{
             span{
@@ -468,6 +469,16 @@ main>div{
     }
     .line{
         margin: 0;
+    }
+}
+@media(max-width: 575.98px){
+    .about-us{
+        .left-panel{
+            img{
+                max-width: 100%;
+
+            }
+        }
     }
 }
 
@@ -523,6 +534,19 @@ main>div{
         }
     }
 }
+@media(max-width: 575.98px){
+    .services{
+        .service{
+            .insurance{
+                flex-direction: column;
+                gap: 10px;
+                img{
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+}
 
 .choose-us{
     background-color: var(--primary-bg-color);
@@ -544,6 +568,9 @@ main>div{
             .insurance-idea{
                 display: flex;
                 gap: 30px;
+                img{
+                    height: 85px;
+                }
                 h5{
                     padding-bottom: 10px;
                     margin: 0;
@@ -558,6 +585,9 @@ main>div{
         }
         .right-side{
             position: relative;
+            img{
+                border-radius: 10px;
+            }
             .draft{
                 position: absolute;
                 bottom: 70%;
@@ -616,6 +646,30 @@ main>div{
         }
     }
 }
+@media(max-width: 576px){
+    .choose-us{
+        .container{
+            .left-side{
+                .insurance-idea{
+                    flex-direction: column;
+                    gap: 10px;
+                    img{
+                        width: 85px;
+                    }
+                }
+                .insurance-idea:not(:last-child){
+                    padding-bottom: 15px;
+                }
+            }
+            .right-side{
+                img{
+                    max-width: 100%;
+
+                }
+            }
+        }
+    }
+}
 
 .pricing{
     font-family: var(--font-family);
@@ -658,7 +712,6 @@ main>div{
             }
             p{
                 padding-top: 10px;
-                // padding-bottom: 3rem;
                 color: var(--text-primary-color);
             }
             .line{
@@ -685,9 +738,10 @@ main>div{
             a{
                 border: solid 1px var(--primary-black);
                 border-radius: 30px;
+                margin-top: 20px;
                 background-color: var(--primary-black);
                 color: var(--primary-white);
-                padding: 20px 85px;
+                padding: 12px 85px;
             }
         }
         .active{
@@ -780,7 +834,7 @@ main>div{
                         }
                     }
                     p{
-                        padding-left: 24px;
+                        padding-left: 34px;
                         font-size: 14px;
                         color: var(--text-primary-color);
                     }
@@ -873,6 +927,30 @@ main>div{
         .process{
             .works{
                 gap: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .processes{
+        .top{
+            .line{
+                display: none;
+            }
+        }
+        .process{
+            .works{
+                .left{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .bottom{
+            padding-bottom: 60px;
+            .line{
+                display: none;
             }
         }
     }
